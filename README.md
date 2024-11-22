@@ -40,6 +40,7 @@
 1. 在服务内点击【新建函数】
 2. 选择【HTTP函数】模板
 3. 配置以下参数：
+
    ```
    函数名称：deeplx（可自定义）
    运行环境：Node.js 16
@@ -49,9 +50,11 @@
    启动命令：npm run start
    时区：Asia/Shanghai
    ```   
-4. 上传代码：选择[本地 ZIP 包上传](你的发布链接)
+
+4. 上传代码：选择[本地 ZIP 包上传](https://github.com/lllgggrrr/deeplx-serverless/archive/refs/heads/main.zip)
 
 #### 3️⃣ 触发器配置
+
     ```
     禁用公网访问 URL：否
     请求方法：POST
@@ -59,9 +62,6 @@
     ```
 
 #### 4️⃣ 环境变量配置（可选）
-
-<details>
-<summary>点击查看可配置的环境变量</summary>
 
 在函数配置中可以设置以下环境变量：
 
@@ -76,8 +76,6 @@
 2. 点击【编辑】按钮
 3. 在【环境变量】区域添加所需变量
 4. 点击【确定】保存更改
-
-</details>
 
 ## 📝 使用方法
 
@@ -146,9 +144,6 @@ curl -X POST '你的函数公网访问地址' \
 
 ## 🔧 沉浸式翻译配置
 
-<details>
-<summary>点击展开配置步骤</summary>
-
 1. 安装[沉浸式翻译](https://github.com/immersive-translate/immersive-translate/releases)插件
 2. 打开插件设置中的【开发者设置】
 3. 启用【测试版实验功能】
@@ -156,7 +151,12 @@ curl -X POST '你的函数公网访问地址' \
 5. 填入你的函数公网访问地址
 6. 如果设置了 TOKEN，在地址后面加上 `?token=你的TOKEN`
 
-</details>
+## 📚 Zotero 翻译插件配置
+
+1. 安装 [Zotero PDF Translate](https://github.com/windingwind/zotero-pdf-translate/releases) 插件
+2. 在 Zotero 中打开插件设置
+3. 选择翻译服务：`DeepLX(API)`
+4. 在 密钥 中 填入你的函数公网访问地址/translate（如果设置了 TOKEN，在地址后面加上 `?token=你的TOKEN`）
 
 ## 🖥️ 本地部署
 
